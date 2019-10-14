@@ -5,7 +5,6 @@ import android.app.Activity
 import android.content.DialogInterface
 import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import com.google.gson.Gson
 import com.kongzue.dialog.v2.SelectDialog
@@ -94,10 +93,8 @@ class VideoFragment : BaseFragment<IBaseContract.BasePresenter>(){
     private fun  getData(){
         //判断本地是否有数据
         val videoList = VideoLocalModel.getInstance().videoList
-        Log.d("chendd","VideoFragment"+videoList.size)
         if (videoList.isNullOrEmpty()){
             WaitDialog.show(context,"加载中...")
-            Log.d("chendd","VideoFragment网络请求")
             //网络请求
             XuekeRemoteModel.getKeTiApi().queryVideoOrAudio(4).enqueue(
                 object :ResultCall<ArrayList<XueKeBean>>{
@@ -118,7 +115,6 @@ class VideoFragment : BaseFragment<IBaseContract.BasePresenter>(){
                 }
             )
         }else{
-            Log.d("chendd","VideoFragment取本地"+videoList.size)
             extendAdapter=ExtendAdapter(context!!,videoList)
             //取本地
             wg_listView.setAdapter(extendAdapter)

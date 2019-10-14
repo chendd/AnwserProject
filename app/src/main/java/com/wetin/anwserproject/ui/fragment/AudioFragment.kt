@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.DialogInterface
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.util.Log
 import com.google.gson.Gson
 import com.kongzue.dialog.v2.SelectDialog
 import com.kongzue.dialog.v2.TipDialog
@@ -15,7 +16,6 @@ import com.tsy.sdk.social.listener.ShareListener
 import com.tsy.sdk.social.share_media.ShareWebMedia
 import com.wetin.anwserproject.MainActivity
 import com.wetin.anwserproject.R
-import com.wetin.anwserproject.adapter.ExtendAdapter
 import com.wetin.anwserproject.adapter.ExtendUserAdapter
 import com.wetin.anwserproject.bean.ResultBean
 import com.wetin.anwserproject.bean.table.ChapterBean
@@ -23,7 +23,6 @@ import com.wetin.anwserproject.bean.table.XueKeBean
 import com.wetin.anwserproject.model.keti.remote.XuekeRemoteModel
 import com.wetin.anwserproject.model.user.local.UserLocalModel
 import com.wetin.anwserproject.model.video.local.AudioLocalModel
-import com.wetin.anwserproject.model.video.local.VideoLocalModel
 import com.wetin.anwserproject.net.help.ResultCall
 import com.wetin.anwserproject.ui.home.MusicPlayActivity
 import com.wetin.anwserproject.ui.me.LoginActivity
@@ -82,6 +81,7 @@ class AudioFragment : BaseFragment<IBaseContract.BasePresenter>() {
         val videoList = AudioLocalModel.getInstance().audioList
         if (videoList.isNullOrEmpty()){
             WaitDialog.show(context,"加载中...")
+            Log.d("chendd","AudioFragment网络请求")
             //网络请求
             XuekeRemoteModel.getKeTiApi().queryVideoOrAudio(3).enqueue(
                 object : ResultCall<ArrayList<XueKeBean>> {
@@ -103,10 +103,11 @@ class AudioFragment : BaseFragment<IBaseContract.BasePresenter>() {
             )
         }else{
             //取本地
+            Log.d("chendd","AudioFragment取本地"+videoList.size)
             extendAdapter=ExtendUserAdapter(context!!,videoList)
             wg_listView.setAdapter(extendAdapter)
             //同步数据
-            XuekeRemoteModel.getKeTiApi().queryVideoOrAudio(4).enqueue(
+            XuekeRemoteModel.getKeTiApi().queryVideoOrAudio(3).enqueue(
                 object : ResultCall<ArrayList<XueKeBean>> {
                     override fun onSuccess(
                         call: Call<ResultBean<ArrayList<XueKeBean>>>,

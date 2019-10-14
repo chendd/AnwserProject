@@ -61,4 +61,11 @@ public class SystemUtils {
         String ss = String.format(Locale.getDefault(), "%02d", s);
         return pattern.replace("mm", mm).replace("ss", ss);
     }
+
+    public static long getSeconds(String time) {
+        long s=Integer.parseInt(time.substring(0,time.indexOf("时")))*3600; //小时
+        s+=Integer.parseInt(time.substring(time.indexOf("时")+1,time.indexOf("分")))*60; //分钟
+        s+=Integer.parseInt(time.substring(time.indexOf("分")+1,time.indexOf("秒")));//秒
+        return s;
+    }
 }

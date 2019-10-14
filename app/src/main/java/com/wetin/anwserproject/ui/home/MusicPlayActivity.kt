@@ -3,18 +3,18 @@ package com.wetin.anwserproject.ui.home
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import com.wetin.anwserproject.R
-import com.wetin.anwserproject.ui.BaseAnswerActivity
-import com.wetin.common.base.IBaseContract
 import android.support.v4.content.ContextCompat
 import android.text.format.DateUtils
 import android.widget.SeekBar
+import com.wetin.anwserproject.R
 import com.wetin.anwserproject.bean.table.ChapterBean
 import com.wetin.anwserproject.service.AudioPlayer
 import com.wetin.anwserproject.service.OnPlayerEventListener
+import com.wetin.anwserproject.ui.BaseAnswerActivity
 import com.wetin.anwserproject.utils.Preferences
 import com.wetin.anwserproject.utils.SystemUtils
 import com.wetin.anwserproject.widget.MusicListDialog
+import com.wetin.common.base.IBaseContract
 import kotlinx.android.synthetic.main.activity_music_play.*
 
 
@@ -44,9 +44,9 @@ class MusicPlayActivity : BaseAnswerActivity<IBaseContract.BasePresenter>(), See
         wg_seekBar.progress = AudioPlayer.get().audioPosition.toInt()
         wg_ci.setText("词")
         wg_seekBar.secondaryProgress = 0
-        wg_seekBar.max = playMusic?.videoTime.toInt()
+        wg_seekBar.max = SystemUtils.getSeconds(playMusic?.videoTime).toInt()
         wg_tv_current_time.text = "00:00"
-        wg_totle_time.text = SystemUtils.formatTime("mm:ss", playMusic.videoTime.toLong())
+        wg_totle_time.text = SystemUtils.formatTime("mm:ss", SystemUtils.getSeconds(playMusic.videoTime).toLong())
     }
 
     /**初始化数据*/

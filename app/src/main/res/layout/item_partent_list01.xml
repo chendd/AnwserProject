@@ -16,7 +16,7 @@
             android:id="@+id/wg_part_title"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"
-            android:paddingEnd="120dp"
+            android:paddingEnd="100dp"
             android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
             app:layout_constraintBottom_toBottomOf="parent"/>
