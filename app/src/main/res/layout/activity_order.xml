@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.OrderActivity">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:background="@color/white"
+            android:layout_height="115dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/constraintLayout2">
+        <ImageView
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:scaleType="center"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/imageView"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="近13年(2007~2019)真题视频..."
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#ff333333"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toTopOf="@+id/imageView" android:id="@+id/wg_title"
+                android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1天"
+                android:textColor="#ff333333"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/wg_title"
+                app:layout_constraintEnd_toEndOf="@+id/wg_title" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/wg_title" android:id="@+id/wg_day"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格：2.0"
+                android:textColor="#ffe4413a"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/wg_day"
+                app:layout_constraintEnd_toEndOf="@+id/wg_day" app:layout_constraintHorizontal_bias="0.441"
+                android:layout_marginTop="4dp" app:layout_constraintTop_toBottomOf="@+id/wg_day"
+                android:id="@+id/wg_price"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="48dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/wg_time_bar">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期"
+                android:textColor="#ff999999"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-04-30"
+                android:textColor="#ff999999"
+                android:textSize="13sp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/wg_time"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计：2.00"
+                android:textColor="#ffe4413a"
+                android:textSize="15sp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp" android:id="@+id/wg_pay_privice"/>
+
+        <TextView
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:text="提交订单"
+                android:textColor="#fffffefe"
+                android:gravity="center"
+                android:background="@color/bg_red"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/wg_btn_submit"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

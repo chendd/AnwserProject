@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="订单编号：AF48591485"
+            android:textColor="#ff333333"
+            android:textSize="12sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="14dp" android:layout_marginTop="14dp"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/wg_order_num" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/wg_time" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-05-08"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="14dp"
+            app:layout_constraintTop_toTopOf="@+id/wg_order_num"
+            app:layout_constraintBottom_toBottomOf="@+id/wg_order_num" android:id="@+id/wg_time"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E7E7E7"
+          app:layout_constraintTop_toBottomOf="@+id/wg_order_num"
+          android:layout_marginTop="14dp" app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" android:id="@+id/view8"/>
+
+    <ImageView
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            app:layout_constraintStart_toStartOf="@+id/wg_order_num" android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/view8" android:id="@+id/wg_img"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="2020年真题视频"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/wg_img"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/wg_img" android:id="@+id/wg_title"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年真题视频"
+            android:textColor="#ff999999"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/wg_img"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/wg_title" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/wg_time_youxaio" android:id="@+id/wg_info"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期：2019-05-08"
+            android:textColor="#ffe4413a"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/wg_img"
+            android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="@+id/wg_img"
+            android:id="@+id/wg_time_youxaio"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E7E7E7"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" android:id="@+id/view9"
+          app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/wg_img"
+          android:layout_marginTop="14dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1件商品，已付款￥1.00(含运费0.0)"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintTop_toBottomOf="@+id/view9" android:layout_marginTop="16dp"
+            android:id="@+id/wg_beizhu"/>
+
+    <com.ruffian.library.widget.RTextView
+            android:layout_width="wrap_content"
+            app:border_color_normal="@color/bg_red"
+            app:border_color_pressed="@color/bg_red"
+            app:corner_radius="@dimen/dp_40"
+            app:border_width_normal="1dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="10dp"
+            app:border_width_pressed="1dp"
+            android:layout_height="wrap_content"
+            android:text="评价晒单"
+            android:textColor="#ffe4413a"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/wg_beizhu" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/wg_beizhu" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp" app:layout_constraintVertical_bias="0.0" android:id="@+id/wg_sure"/>
+</android.support.constraint.ConstraintLayout>

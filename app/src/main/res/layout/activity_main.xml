@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="false"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    <com.wetin.anwserproject.widget.NoScrollViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/wg_content_pager"/>
+
+    <com.wetin.anwserproject.widget.BottomLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tabBackground="@null"
+            app:tabRippleColor="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/wg_bottom"></com.wetin.anwserproject.widget.BottomLayout>
+</LinearLayout>

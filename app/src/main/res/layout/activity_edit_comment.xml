@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.me.EditCommentActivity">
+    <android.support.constraint.ConstraintLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" android:id="@+id/constraintLayout10">
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="订单编号：AF48591485"
+                android:textColor="#ff333333"
+                android:textSize="12sp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/view13" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:id="@+id/wg_order_id" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/wg_time" app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-05-08"
+                android:textColor="#ff333333"
+                android:textSize="12sp"
+                android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/view13" android:id="@+id/wg_time"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/bg_line"
+              tools:layout_editor_absoluteX="0dp" app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="38dp" android:id="@+id/view13"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="80dp"
+                android:padding="16dp"
+                android:background="@null"
+                android:hint="在这里写下你和他的故事，与大家一起分享吧！"
+                android:textSize="12sp" android:id="@+id/wg_ed_content"
+                app:layout_constraintTop_toBottomOf="@+id/view13" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_camera"
+                android:id="@+id/wg_img" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/wg_ed_content" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+    <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_red"
+            android:text="提交"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:id="@+id/wg_submit" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"/>
+</android.support.constraint.ConstraintLayout>

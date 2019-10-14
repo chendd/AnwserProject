@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">AnwserProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <!--专科院校-->
+    <string-array name="array_zhuangke">
+        <item>广州番禺职业技术学院</item>
+        <item>深圳职业技术学院</item>
+        <item>广州医科大学</item>
+        <item>广州中医药大学</item>
+        <item>华南师范大学</item>
+        <item>韶关学院</item>
+        <item>惠州学院</item>
+        <item>韩山师范学院</item>
+        <item>岭南师范学院</item>
+        <item>肇庆学院</item>
+        <item>嘉应学院</item>
+        <item>广东技术师范学院</item>
+        <item>广东白云学院</item>
+        <item>广东轻工职业技术学院</item>
+        <item>广东交通职业技术学院</item>
+        <item>广东水利电力职业技术学院</item>
+        <item>广州大学</item>
+        <item>广州航海学院</item>
+        <item>广东南华工商职业学院</item>
+        <item>广东石油化工学院</item>
+        <item>广州民航职业技术学院</item>
+        <item>广东培正学院</item>
+        <item>广东松山职业技术学院</item>
+        <item>广东农工商职业技术学院</item>
+        <item>广东新安职业技术学院</item>
+        <item>广东科学技术职业学院</item>
+        <item>广东食品药品职业学院</item>
+        <item>广东东软学院</item>
+        <item>广州康大职业技术学院</item>
+        <item>广东行政职业学院</item>
+        <item>广东体育职业技术学院</item>
+        <item>广东职业技术学院</item>
+        <item>广东建设职业技术学院</item>
+        <item>广东女子职业技术学院</item>
+        <item>广东机电职业技术学院</item>
+        <item>广东岭南职业技术学院</item>
+        <item>广东工贸职业技术学院</item>
+        <item>广东司法警官职业学院</item>
+        <item>广东亚视演艺职业学院</item>
+        <item>广东外语艺术职业学院</item>
+        <item>广东文艺职业学院</item>
+        <item>广州体育职业技术学院</item>
+        <item>广州工程技术职业学院</item>
+        <item>广东邮电职业技术学院</item>
+        <item>佛山职业技术学院</item>
+        <item>佛山科学技术学院</item>
+        <item>潮汕职业技术学院</item>
+        <item>顺德职业技术学院</item>
+        <item>私立华联学院</item>
+        <item>珠海艺术职业学院</item>
+        <item>汕尾职业技术学院</item>
+        <item>罗定职业技术学院</item>
+        <item>阳江职业技术学院</item>
+        <item>河源职业技术学院</item>
+        <item>汕头职业技术学院</item>
+        <item>揭阳职业技术学院</item>
+        <item>深圳信息职业技术学院</item>
+        <item>清远职业技术学院</item>
+        <item>中山火炬职业技术学院</item>
+        <item>江门职业技术学院</item>
+        <item>茂名职业技术学院</item>
+        <item>珠海城市职业技术学院</item>
+        <item>惠州经济职业技术学院</item>
+        <item>广州工商学院</item>
+        <item>广州涉外经济职业技术学院</item>
+        <item>广州南洋理工职业学院</item>
+        <item>广州科技职业技术学院</item>
+        <item>广东科技学院</item>
+        <item>广东工商职业学院</item>
+        <item>广州现代信息工程职业技术学院</item>
+        <item>广东理工职业学院</item>
+        <item>广州华南商贸职业学院</item>
+        <item>广州华立科技职业学院</item>
+        <item>广州城市职业学院</item>
+        <item>广东工程职业技术学院</item>
+        <item>广州铁路职业技术学院</item>
+        <item>广东科贸职业学院</item>
+        <item>广州科技贸易职业学院</item>
+        <item>广州珠江职业技术学院</item>
+        <item>广州松田职业学院</item>
+        <item>广东文理职业学院</item>
+        <item>广州城建职业学院</item>
+        <item>广东南方职业学院</item>
+        <item>广州华商职业学院</item>
+        <item>广州华夏职业学院</item>
+        <item>广东第二师范学院</item>
+        <item>广东环境保护工程职业学院</item>
+        <item>广东青年职业学院</item>
+        <item>广州东华职业学院</item>
+        <item>肇庆医学高等专科学校</item>
+        <item>东莞理工学院城市学院</item>
+        <item>中山职业技术学院</item>
+        <item>东莞职业技术学院ほ</item>
+        <item>广东创新科技职业学院</item>
+        <item>广东舞蹈戏剧职业学院</item>
+        <item>惠州卫生职业技术学院</item>
+        <item>广东信息工程职业学院</item>
+        <item>广东生态工程职业学院</item>
+        <item>惠州城市职业学院</item>
+        <item>广东碧桂园职业学院</item>
+        <item>广东茂名健康职业学院</item>
+        <item>广东酒店管理职业技术学院</item>
+        <item>广东茂名幼儿师范专科学校</item>
+        <item>广州卫生职业技术学院</item>
+        <item>惠州工程职业学院</item>
+        <item>广东江门中医药职业学院</item>
+        <item>广东茂名农林科技职业学院</item>
+        <item>湛江幼儿师范专科学校</item>
+        <item>其它</item>
+    </string-array>
+    <!--本科院校-->
+    <string-array name="array_benke">
+        <item>华南师范大学</item>
+        <item>广州美术学院</item>
+        <item>广东金融学院</item>
+        <item>广东财经大学</item>
+        <item>广东技术师范大学</item>
+        <item>电子科技大学中山学院</item>
+        <item>广东科技学院</item>
+        <item>中山大学南方学院</item>
+        <item>东莞理工学院城市学院</item>
+        <item>广东理工学院</item>
+        <item>肇庆学院</item>
+        <item>东莞理工学院</item>
+        <item>广州大学松田学院</item>
+        <item>华南农业大学珠江学院</item>
+        <item>广东海洋大学寸金学院</item>
+        <item>广东工业大学华立学院</item>
+        <item>中山大学新华学院</item>
+        <item>韩山师范学院</item>
+        <item>广州商学院</item>
+        <item>广东财经大学华商学院</item>
+        <item>岭南师范学院</item>
+        <item>韶关学院</item>
+        <item>广东石油化工学院</item>
+        <item>广东培正学院</item>
+        <item>吉林大学珠海学院</item>
+        <item>佛山科学技术学院</item>
+        <item>五邑大学</item>
+        <item>广州航海学院</item>
+        <item>北京理工大学珠海学院</item>
+        <item>嘉应学院</item>
+        <item>仲恺农业工程学院</item>
+        <item>广州工商学院</item>
+        <item>广东白云学院</item>
+        <item>其它</item>
+
+    </string-array>
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="setting_key_mobile_network_play">mobile_network_play</string>
+    <string name="setting_key_mobile_network_download">mobile_network_download</string>
+    <string name="setting_key_sound_effect">sound_effect</string>
+    <string name="setting_key_filter_size">filter_size</string>
+    <string name="setting_key_filter_time">filter_time</string>
+</resources>

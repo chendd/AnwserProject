@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        tools:context=".ui.fragment.HomeFragment">
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:paddingTop="12dp"
+            android:text="插本政治"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textView"/>
+    <ImageView
+            android:src="@drawable/ic_share"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:paddingTop="15dp"
+            android:layout_height="40dp"
+            android:id="@+id/wg_share" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="4dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="@+id/textView"/>
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:id="@+id/wg_rl_search"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:transitionName="search"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"
+            android:background="@drawable/style_white_corner"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp">
+        <TextView
+                android:hint="搜索关键词"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffc5c5c5"
+                android:background="@null"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:id="@+id/wg_search"
+        />
+        <ImageView
+                android:src="@drawable/ic_search"
+                android:layout_width="13dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="13dp"
+                android:id="@+id/imageView2"
+                app:layout_constraintBottom_toBottomOf="@+id/wg_search"
+                app:layout_constraintStart_toStartOf="@+id/wg_search" android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toTopOf="@+id/wg_search"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/wg_rl_search" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp">
+        <!--可伸缩-->
+        <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                app:elevation="0dp"
+                android:id="@+id/wg_app_bar"
+                android:fitsSystemWindows="true"
+                android:layout_height="100dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    android:layout_height="match_parent">
+                <android.support.constraint.ConstraintLayout
+                        android:background="#F7F7F7"
+                        app:layout_collapseMode="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <!--错题面板-->
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:background="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="90dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="8dp" tools:ignore="MissingConstraints">
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                            <ImageView android:layout_width="48dp" android:layout_height="48dp"
+                                       android:src="@drawable/ic_red_faile" android:id="@+id/wg_faile_keti"/>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="错题"
+                                    android:layout_marginTop="8dp"
+                                    android:textColor="#ff333333"
+                                    android:textSize="13sp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                            <ImageView android:layout_width="48dp" android:layout_height="48dp"
+                                       android:src="@drawable/ic_yellow_collect" android:id="@+id/wg_collect"/>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="收藏"
+                                    android:layout_marginTop="8dp"
+                                    android:textColor="#ff333333"
+                                    android:textSize="13sp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                            <ImageView android:layout_width="48dp" android:layout_height="48dp"
+                                       android:src="@drawable/ic_blue_comment" android:id="@+id/wg_comment"/>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="评论"
+                                    android:layout_marginTop="8dp"
+                                    android:textColor="#ff333333"
+                                    android:textSize="13sp"
+                            />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!--二级列表-->
+            <com.wetin.anwserproject.widget.MyExpandableListView
+                    android:id="@+id/wg_ex_listview"
+                    android:layout_width="match_parent"
+                    android:divider="#FFE7E7E7"
+                    android:dividerHeight="0.5dp"
+                    android:childDivider="#FFE4E4E4"
+                    android:overScrollMode="never"
+                    android:layoutDirection="rtl"
+                    android:layout_height="match_parent">
+            </com.wetin.anwserproject.widget.MyExpandableListView>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

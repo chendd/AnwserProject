@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layoutDirection="ltr"
+        android:background="@color/bg_gray"
+        android:layout_height="45dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一章练声"
+            android:textColor="#ff333333"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:id="@+id/wg_child_title"/>
+    <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp" app:srcCompat="@drawable/ic_go"
+            android:id="@+id/imageView19" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29题"
+            android:textColor="#ff999999"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/wg_suo_bar" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/wg_count" android:visibility="visible"/>
+    <ProgressBar
+            android:layout_width="40dp" android:layout_height="3dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/wg_part_process"
+            android:progressDrawable="@drawable/progress_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wg_part_count"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/wg_count"/>
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/wg_suo_bar"
+            android:background="@color/bg_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView19" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp" android:visibility="visible">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享解锁"
+                android:textColor="#ffedc043"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView25" android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/wg_suo_info"/>
+        <ImageView
+                android:src="@drawable/ic_suo"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:id="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#F0F0F0"
+        android:layout_height="47dp" android:id="@+id/wg_comment_bar">
+    <View android:layout_width="match_parent" android:background="@color/bg_line" android:layout_height="0.5dp"
+          tools:ignore="MissingConstraints"/>
+
+    <com.ruffian.library.widget.RTextView
+            android:layout_width="0dp"
+            app:corner_radius="15dp"
+            android:text="写评论"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:textColor="#ff999999"
+            android:textSize="13sp"
+            app:background_normal="@android:color/white"
+            app:background_pressed="@android:color/white"
+            android:layout_height="27dp"
+            android:id="@+id/wg_edit_comment" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/wg_collect" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="55dp"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/style_collect"
+            android:id="@+id/wg_collect"
+            app:layout_constraintEnd_toStartOf="@+id/wg_comment" app:layout_constraintTop_toTopOf="@+id/wg_comment"
+            app:layout_constraintBottom_toBottomOf="@+id/wg_comment"
+            app:layout_constraintStart_toEndOf="@+id/wg_edit_comment" app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+            android:layout_width="55dp"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_coment"
+            android:id="@+id/wg_comment"
+            app:layout_constraintEnd_toStartOf="@+id/imageView16" app:layout_constraintTop_toTopOf="@+id/imageView16"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+            app:layout_constraintStart_toEndOf="@+id/wg_collect" app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+            android:layout_width="56dp"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_zan"
+            android:id="@+id/imageView16"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wg_comment" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="13dp"
+            android:layout_height="12dp" app:srcCompat="@drawable/ic_edit"
+            android:id="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/wg_edit_comment"
+            app:layout_constraintBottom_toBottomOf="@+id/wg_edit_comment" app:layout_constraintVertical_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/wg_edit_comment" android:layout_marginStart="8dp"/>
+</android.support.constraint.ConstraintLayout>

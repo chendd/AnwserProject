@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:id="@+id/wg_iv_head"
+               android:layout_marginTop="14dp"
+               app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginStart="18dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是黎明"
+            android:textColor="#ffe4413a"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/wg_iv_head"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/wg_iv_head"
+            android:id="@+id/wg_name"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国商学院    刚刚"
+            android:textColor="#ff999999"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/wg_name" android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/wg_name" android:id="@+id/wg_from"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:text="易居研究院智库中心研究总监严跃进表示，部分企业虽然资金面收紧了，但今年下半年受市场影响，拿地计划被打乱..."
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/wg_name" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/wg_iv_head"
+            android:id="@+id/wg_context" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+    <View android:layout_width="wrap_content" android:layout_height="1dp" android:background="@color/bg_line"
+          android:layout_marginTop="16dp"
+          app:layout_constraintTop_toBottomOf="@+id/wg_context" app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"/>
+    <com.ruffian.library.widget.RTextView
+            android:layout_width="70dp"
+            app:corner_radius="12dp"
+            android:gravity="center"
+            app:border_width_normal="1dp"
+            app:border_color_normal="#E7E7E7"
+            app:border_color_pressed="#E7E7E7"
+            android:text="查看原题"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            android:layout_height="24dp" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/wg_name"
+            app:layout_constraintBottom_toBottomOf="@+id/wg_from" android:id="@+id/wg_check_ti"/>
+</android.support.constraint.ConstraintLayout>

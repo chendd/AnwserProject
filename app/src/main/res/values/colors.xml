@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F5F7F6</color>
+    <color name="colorPrimaryDark">#F7F7F7</color>
+    <color name="colorAccent">#727272</color>
+
+    <color name="bg_gray">#f5f5f5</color>
+    <color name="bg_dark_gray">#E6E6E6</color>
+    <color name="bg_line">#ffe7e7e7</color>
+    <color name="bg_red">#E4413A</color>
+    <color name="bg_red_press">#E04944</color>
+    <color name="ed_text_color">#727272</color>
+    <color name="progress_bg">#E9E9E9</color>
+
+    <color name="bg_green">#8DC049</color>
+    <color name="text_gray">#333333</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

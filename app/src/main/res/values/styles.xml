@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <declare-styleable name="RatingBar">
+        <!--未选中-->
+        <attr name="starEmptyRes" format="reference"/>
+        <!--选中半个-->
+        <attr name="starHalfRes" format="reference"/>
+        <!--选中全部-->
+        <attr name="starSelectedRes" format="reference"/>
+        <!--星星的总数-->
+        <attr name="startTotalNumber" format="integer"/>
+        <!--默认选中的数量 -->
+        <attr name="selectedNumber" format="float"/>
+        <!--星星的间距-->
+        <attr name="starDistance" format="dimension"/>
+        <!--星星的宽度-->
+        <attr name="starWidth" format="dimension"/>
+        <!--星星的高度-->
+        <attr name="starHeight" format="dimension"/>
+        <!--是不是只画整个星星，不画半个-->
+        <attr name="starIsFull" format="boolean"/>
+    </declare-styleable>
+
+
+    <!-- 用于开启滑动返回功能的 Activity -->
+    <style name="AppTheme.full">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TabLayoutTextSmillStyle_bold">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--上移下隐-->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_push_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_down_out</item>
+    </style>
+
+    <style name="inputDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--设置无边框-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <!-- 无标题 -->
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item>
+        <!--显示软件盘-->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--设置无边框-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <!-- 无标题 -->
+    </style>
+
+    <style name="TabLayoutTextSmillStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+</resources>

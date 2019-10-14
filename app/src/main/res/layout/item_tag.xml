@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="60dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:textColor="@drawable/check_text_gray_yellow"
+        android:textSize="12sp"
+        android:background="@drawable/select_bg_02"
+        android:layout_height="24dp"
+        tools:ignore="MissingDefaultResource"
+        tools:text="@tools:sample/date/day_of_week">
+</TextView>
